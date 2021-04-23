@@ -1,12 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import UnityApp from "./components/UnityPage";
+
+const style = {
+    width: window.screen.width,
+    height: window.screen.height,
+    margin: "0 auto",
+};
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+      <div style={{background: "#000000"}}>
+          <div style={style}>
+              <UnityApp />
+          </div>
+      </div>
   </React.StrictMode>,
   document.getElementById('root')
 );
